@@ -13,7 +13,6 @@ final class CustomView: UIView {
     private let instructionLabel = UILabel.makeLabel(font: .systemFont(ofSize: 16, weight: .regular), textColor: .systemGray, numberOfLines: 1)
    
 
-    
     override init(frame: CGRect) {
         super .init(frame: frame)
         setup()
@@ -66,7 +65,6 @@ private extension CustomView {
             instructionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             instructionLabel.topAnchor.constraint(equalTo: ingredientsLabel.bottomAnchor, constant: 8),
             instructionLabel.heightAnchor.constraint(equalToConstant: 60),
-            
         ])
     }
 }
